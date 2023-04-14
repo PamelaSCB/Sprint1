@@ -1,2 +1,4 @@
 # Sprint1
-Itinerario React IT Academy
+
+Ejercicios Sprint 1 Itinerario React 
+Alumna: Pamela Santa Cruz Boyle
