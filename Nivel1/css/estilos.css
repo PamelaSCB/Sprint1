@@ -88,3 +88,46 @@
     flex-direction: column;
   }
 }
+
+@media all and (max-width: 488px) {
+  /* para moviles */
+  .menu {
+    flex-direction: column;
+  }
+  .logo,
+  .nav,
+  .social {
+    flex: 1 1 auto;
+  }
+
+  .main {
+    background: #f8e42f;
+  }
+
+  .section {
+    background: #1b647a;
+    flex-direction: column;
+  }
+
+  .article {
+    background: #659ab8;
+    flex: 1 1 auto;
+  }
+
+  .line {
+    background: #abe7ab;
+    flex: 1 1 auto;
+  }
+
+  .aside {
+    background: #f57439;
+  }
+
+  .others {
+    background: #e7ae64;
+  }
+
+  .foot {
+    background: #ebbe58;
+  }
+}
