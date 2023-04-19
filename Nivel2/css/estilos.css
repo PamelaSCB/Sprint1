@@ -126,7 +126,6 @@ html {
   font-size: 1.6rem;
   display: flex;
   gap: 1rem;
- 
 }
 
 .section {
@@ -169,7 +168,6 @@ html {
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
- 
 }
 
 .article p {
@@ -361,4 +359,3 @@ html {
     flex: 1;
   }
 }
-
