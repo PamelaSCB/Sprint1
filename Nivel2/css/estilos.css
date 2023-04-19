@@ -31,11 +31,15 @@ html {
   margin-top: 2.5rem;
   display: flex;
   justify-content: center;
+  animation: up 1s ease-in;
 }
 
 .logo {
   padding: 1rem 0 0 2rem;
   flex: 1 1 auto;
+  animation-duration: 5s;
+  animation-name: animLogo;
+  animation-iteration-count: infinite;
 }
 
 .logo img {
@@ -127,6 +131,7 @@ html {
   font-size: 1.6rem;
   display: flex;
   gap: 1rem;
+  animation: moveLeft 1s ease-in;
 }
 
 .section {
@@ -169,6 +174,7 @@ html {
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
+  animation: moveRigth 1s ease-in;
 }
 
 .article p {
@@ -206,6 +212,7 @@ html {
   display: flex;
   flex-flow: column nowrap;
   gap: 2rem;
+  animation: up 1s ease-in;
 }
 
 .others {
@@ -220,6 +227,7 @@ html {
 .footer {
   background-color: #46444433;
   font-size: 1.6rem;
+  animation: up 1s ease-in;
 }
 
 .foot {
@@ -317,7 +325,7 @@ html {
   }
 }
 
-@media all and (max-width:480px) {
+@media all and (max-width: 480px) {
   /* para moviles */
   .menu {
     flex-direction: column;
@@ -358,5 +366,53 @@ html {
 
   .article {
     flex: 1;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moverRigth {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes animLogo {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotateY(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotateY(360deg);
   }
 }
